@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#10264b">
+    <meta
+      name="description"
+      content="Prepare your CHINAPY EMMANUEL International Student Scholarship application."
+    >
+    <title>Scholarship Application | CHINAPY EMMANUEL</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="CHINAPY EMMANUEL scholarship home">
+        <span class="brand-mark" aria-hidden="true">C<span>.</span></span>
+        <span class="brand-name">CHINAPY <strong>EMMANUEL</strong><small>EDUCATION &amp; OPPORTUNITY</small></span>
+      </a>
+      <span class="header-note"><span class="status-dot" aria-hidden="true"></span> Scholarship application</span>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> YOUR NEXT CHAPTER STARTS HERE</p>
+          <h1 id="page-title">Invest in your<br><span>brightest future.</span></h1>
+          <p class="hero-description">
+            Tell us about your studies and take the first step toward the
+            CHINAPY EMMANUEL International Student Scholarship.
+          </p>
+          <div class="hero-meta">
+            <span class="meta-icon" aria-hidden="true">✦</span>
+            <span>Thoughtfully built for students across Nigeria</span>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="art-orbit orbit-one"></div>
+          <div class="art-orbit orbit-two"></div>
+          <div class="art-star star-one">✦</div>
+          <div class="art-star star-two">✧</div>
+          <div class="art-book">
+            <div class="book-pages"></div>
+            <div class="book-spine"></div>
+            <div class="book-ribbon"></div>
+          </div>
+          <div class="art-cap"><span></span></div>
+          <div class="art-caption"><span>LEARN</span><i></i><span>GROW</span><i></i><span>THRIVE</span></div>
+        </div>
+      </section>
+
+      <section class="application-section" aria-labelledby="form-heading">
+        <div class="section-intro">
+          <div>
+            <p class="eyebrow dark-eyebrow">THE APPLICATION</p>
+            <h2 id="form-heading">A little about you</h2>
+            <p class="section-description">Share your details below. Fields marked with <span aria-hidden="true">*</span> are required.</p>
+          </div>
+          <div class="secure-note"><span aria-hidden="true">◈</span> Your details stay private</div>
+        </div>
+
+        <div class="form-layout">
+          <form id="scholarship-form" class="application-card" novalidate>
+            <div class="form-section">
+              <div class="form-section-heading">
+                <span class="step-number">01</span>
+                <div><h3>Student details</h3><p>Let’s start with the essentials.</p></div>
+              </div>
+              <div class="field-grid">
+                <div class="field field-wide">
+                  <label for="student-name">Full name <span aria-hidden="true">*</span></label>
+                  <input id="student-name" name="studentName" type="text" autocomplete="name" placeholder="As shown on your school records" required maxlength="100">
+                </div>
+                <div class="field">
+                  <label for="matric-number">Matriculation number <span aria-hidden="true">*</span></label>
+                  <input id="matric-number" name="matricNumber" type="text" placeholder="e.g. 2023/ENG/0123" required maxlength="40">
+                </div>
+                <div class="field">
+                  <label for="student-age">Age <span aria-hidden="true">*</span></label>
+                  <div class="input-suffix">
+                    <input id="student-age" name="age" type="number" inputmode="numeric" min="1" max="100" placeholder="Your age" required>
+                    <span>years</span>
+                  </div>
+                </div>
+                <div class="field field-wide">
+                  <label for="institution">School / institution <span aria-hidden="true">*</span></label>
+                  <input id="institution" name="institution" type="text" list="school-options" autocomplete="organization" placeholder="Type to search Nigerian institutions" required aria-describedby="school-hint">
+                  <datalist id="school-options"></datalist>
+                  <span class="field-hint" id="school-hint">Search a selected, non-exhaustive directory, or choose “Other (not listed)”.</span>
+                </div>
+                <div class="field field-wide is-hidden" id="other-school-field">
+                  <label for="other-school">Institution name <span aria-hidden="true">*</span></label>
+                  <input id="other-school" name="otherSchool" type="text" placeholder="Enter your school or institution" maxlength="120">
+                </div>
+                <div class="field field-wide">
+                  <label for="education-level">Current education level <span aria-hidden="true">*</span></label>
+                  <div class="select-wrap">
+                    <select id="education-level" name="educationLevel" required>
+                      <option value="" selected disabled>Select your current level</option>
+                      <option value="Secondary school">Secondary school</option>
+                      <option value="ND / NCE">ND / NCE</option>
+                      <option value="HND">HND</option>
+                      <option value="Undergraduate">Undergraduate</option>
+                      <option value="Postgraduate diploma">Postgraduate diploma</option>
+                      <option value="Master’s">Master’s</option>
+                      <option value="Doctorate">Doctorate</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-divider"></div>
+
+            <div class="form-section">
+              <div class="form-section-heading">
+                <span class="step-number">02</span>
+                <div><h3>Your studies</h3><p>Help us understand your academic timeline.</p></div>
+              </div>
+              <div class="field-grid">
+                <div class="field">
+                  <label for="start-year">Programme start year <span aria-hidden="true">*</span></label>
+                  <div class="select-wrap"><select id="start-year" name="startYear" required><option value="" selected disabled>Select year</option></select></div>
+                </div>
+                <div class="field">
+                  <label for="end-year">Expected ending year <span aria-hidden="true">*</span></label>
+                  <div class="select-wrap"><select id="end-year" name="endYear" required><option value="" selected disabled>Select year</option></select></div>
+                  <span class="field-hint" id="year-hint">Must be the same year or later than your start year.</span>
+                </div>
+                <div class="field field-wide">
+                  <label for="school-id">School ID card <span aria-hidden="true">*</span></label>
+                  <label class="upload-box" for="school-id">
+                    <span class="upload-icon" aria-hidden="true">↑</span>
+                    <span class="upload-copy"><strong>Choose a file to upload</strong><small id="upload-filename">PDF, JPG or PNG · up to 5 MB</small></span>
+                    <span class="upload-action">Browse files</span>
+                    <input id="school-id" name="schoolId" type="file" accept=".pdf,.jpg,.jpeg,.png,application/pdf,image/jpeg,image/png" required>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-footer">
+              <p><span aria-hidden="true">*</span> Required fields</p>
+              <button class="submit-button" type="submit">Review application <span aria-hidden="true">→</span></button>
+            </div>
+            <div class="confirmation is-hidden" id="confirmation" role="status" aria-live="polite" tabindex="-1"></div>
+          </form>
+
+          <aside class="side-panel" aria-label="Application guidance">
+            <div class="side-card checklist-card">
+              <div class="side-icon" aria-hidden="true">✧</div>
+              <p class="side-label">BEFORE YOU BEGIN</p>
+              <h3>Have these<br>details ready.</h3>
+              <ul class="checklist">
+                <li><span aria-hidden="true">✓</span><span>Your correct matriculation number</span></li>
+                <li><span aria-hidden="true">✓</span><span>Your programme start and end years</span></li>
+                <li><span aria-hidden="true">✓</span><span>A clear photo or scan of your school ID</span></li>
+              </ul>
+            </div>
+            <div class="side-card directory-card">
+              <div class="directory-icon" aria-hidden="true">⌕</div>
+              <div><h3>Can’t find your school?</h3><p>Choose “Other (not listed)” in the school field and enter your institution’s name.</p></div>
+            </div>
+            <p class="privacy-note"><span aria-hidden="true">▣</span> Your information is used only to prepare this application preview.</p>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="footer-brand" href="#">CHINAPY <strong>EMMANUEL</strong></a>
+      <span>Education opens doors. Keep going.</span>
+      <span class="footer-year">© <span id="current-year"></span></span>
+    </footer>
+  </body>
+</html>
